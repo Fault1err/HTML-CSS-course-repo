@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.container {
+    max-width: 1140px;
+    /* Здесь можно делать max-width? */
+    margin: 0 auto;
+}
+
+.header {
+    background: #222222;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 20px;
+}
+
+.header_left {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_icon_1 {
+    margin-right: 41px;
+}
+
+.header_right {
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_logo {
+    background: #F1E4E6;
+}
+
+.logo_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.man_photo {
+    margin-top: 12px;
+}
+
+.logo {
+    margin-top: 290px;
+    margin-right: 101px;
+}
+
+.logo_1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F
+}
+
+.logo_2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F
+}
+
+.pink_text {
+    color: #F16D7F;
+}
+
+.offer_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+offer_text {
+    display: inline-block;
+    align-items: center;
+}
+
+.offer_1_1 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_1_2 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_1_3 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_2 {
+    margin-top: 30px;
+    margin-bottom: 96px;
+    width: 1140px;
+    height: 180px;
+    background-image: url(img/offer_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_white_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.offer_pink_text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.offer_pink_text:hover { /* Попробовала сделать эффект наведения */
+    color: white;
+}
