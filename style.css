@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.container {
+    max-width: 1140px;
+    /* Здесь можно делать max-width? */
+    margin: 0 auto;
+}
+
+.header {
+    background: #222222;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.header_left {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_padding_bottom {
+    padding-bottom: 20px;
+}
+
+.header_icon_1 {
+    margin-right: 41px;
+}
+
+.header_right {
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_hover:hover {
+    transform: scale(1.2);
+}
+
+.mega-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-bottom: 24px;
+    padding-left: 34px;
+    padding-top: 0px;
+    padding-right: 143px;
+}
+
+.header_icon_3 {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.header_icon_3:hover .mega-box {
+    display: flex;
+}
+
+.mega-box {
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    padding: 37px;
+    top: 45px;
+    display: none;
+}
+
+.mega-box::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 11px;
+    transform: rotate(45deg);
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+.mega-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.closing_logo {
+    width: 12px;
+    padding-left: 203px;
+}
+
+.closing_logo:hover .mega-box {
+    display: none;
+}
+
+.menu_heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    padding-bottom: 12px;
+    padding-top: 20px;
+    padding-left: 33px;
+}
+
+.mega-link {
+    padding-bottom: 11px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding-left: 54px;
+}
+
+.mega-link:last-of-type {
+    padding-bottom: 94px;
+}
+
+.mega-link:hover {
+    color: #F16D7F;
+}
+
+.banner_logo {
+    background: #F1E4E6;
+}
+
+.logo_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.man_photo {
+    margin-top: 12px;
+}
+
+.logo {
+    margin-top: 290px;
+    margin-right: 101px;
+}
+
+.logo_1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F
+}
+
+.logo_2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F
+}
+
+.pink_text {
+    color: #F16D7F;
+}
+
+.offer_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+offer_text {
+    display: inline-block;
+    align-items: center;
+}
+
+.offer_1_1 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_1_2 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_1_3 {
+    width: 360px;
+    height: 260px;
+    background-image: url(img/offer_1_3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_2 {
+    margin-top: 30px;
+    margin-bottom: 96px;
+    width: 1140px;
+    height: 180px;
+    background-image: url(img/offer_2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_white_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.offer_pink_text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.offer_pink_text:hover {
+    /* Попробовала сделать эффект наведения */
+    color: white;
+}
+
+.featured_items_heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.featured_items_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.catalog_link_button {
+    margin-top: 63px;
+    margin-bottom: 109px;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog_link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border: 1px solid #FF6A6A;
+}
+
+.shop_statements_block {
+    background: #222224;
+}
+
+.statements_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statements_logo {
+    display: block;
+    padding-top: 103px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statements_heading {
+    padding-top: 28px;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.statements_heading_2 {
+    padding-top: 21px;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.statements_text {
+    padding-top: 16px;
+    padding-bottom: 104px;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscribe_block {
+    background: url(img/background_subscribe_filter_edited.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.subscribe_block_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote_photo {
+    padding-top: 87px;
+    padding-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-bottom: 126px;
+    width: 359px;
+}
+
+.subscribe_form_block {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscribe_form_heading {
+    padding-top: 150px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_form_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    padding-bottom: 32px;
+}
+
+.subscribe_form {
+    display: flex;
+}
+
+.subscribe_form_field {
+    display: block;
+    margin-left: auto;
+    background: #E1E1E1;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    opacity: 0.4;
+    padding-top: 17px;
+    padding-right: 64px;
+    padding-bottom: 16px;
+    padding-left: 22px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.subscribe_form_button {
+    display: block;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 17px;
+    padding-right: 17px;
+    padding-bottom: 16px;
+    padding-left: 18px;
+    border: none;
+}
+
+.copyright_and_social_media_block {
+    justify-content: space-between;
+    background-color: #222224;
+    ;
+}
+
+.copyright_and_social_media_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.fa-brands {
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 23px;
+    margin-right: 7px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.fa-brands:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
+}
