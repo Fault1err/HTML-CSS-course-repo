@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Registration form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/fe6bbb5658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_flex">
+                <div class="header_left">
+                    <div class="header_icon_1 icon_padding_bottom icon_hover"><a href="index.html">
+                            <img src="img/logo_1.svg" alt="logo_1"></a>
+                    </div>
+                    <div class="header_icon_2 icon_padding_bottom"><img src="img/logo_2.svg" alt="search"></div>
+                    <!--Будет поле поиска?-->
+                </div>
+
+                <nav class="header_right">
+                    <div class="header_icon_3">
+                        <img class="icon_hover" src="img/logo_3.svg" alt="menu">
+                        <div class="mega-box">
+                            <div class="mega-item">
+                                <img class="closing_logo" src="img/close_the_block.svg" alt="close">
+                                <!--Закрытие меню по клику пока не работает-->
+
+                                <h3 class="mega-heading">MENU</h3>
+
+                                <h4 class="menu_heading">MEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Bags</a>
+                                <a class="mega-link" href="#">Denim</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+
+                                <h4 class="menu_heading">WOMEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+
+                                <h4 class="menu_heading">KIDS</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+                                <a class="mega-link" href="#">Bags</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header_icon_4 icon_padding_bottom">
+                        <a href="registration_form.html"><img class="icon_hover" src="img/logo_4.svg" alt="profile">
+                        </a>
+                    </div>
+                    <div class="header_icon_5 icon_padding_bottom icon_hover"><a href="#"><img src="img/logo_5.svg"
+                                alt="basket"></a></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="registration_main">
+        <div class="container">
+            <h2 class="registration_logo">REGISTRATION</h2>
+        </div>
+    </main>
+
+    <section class="registration_form_and_info">
+        <div class="container">
+            <div class="registration_form_and_info_flex">
+                <section class="registration">
+                    <form action="#">
+                        <p class="registration_form_text">Your Name</p>
+                        <input class="form_text_field field_margin" type="text" placeholder="First Name"><br>
+                        <input class="form_text_field" type="text" placeholder="Last Name"><br>
+
+                        <input class="radio_margin_top gender_radio_button " type="radio" name="gender" checked><span
+                            class="radio_button_text">Male</span>
+                        <input class="radio_margin_bottom gender_radio_button radio_right " type="radio"
+                            name="gender"><span class="radio_button_text">Female</span><br>
+
+                        <p class="registration_form_text">Login details</p>
+                        <input class="form_text_field field_margin" type="email" placeholder="Email"><br>
+                        <input class="form_text_field" type="password" placeholder="Password">
+                        <p class="registration_form_password_description">Please use 8 or more characters, with at least
+                            1 number and a mixture of uppercase and lowercase letters</p>
+                        <button class="registration_submit_button" type="submit">JOIN NOW<img class="arrow_pic"
+                                src="img/arrow_submit_button.svg" alt="arrow"></button>
+                    </form>
+                </section>
+
+                <section class="registration_info_block">
+                    <h3 class="registration_info_heading">LOYALTY HAS ITS PERKS</h3>
+                    <p class="registration_info_text">Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting with
+                        these as soon as you join:</p>
+                    <ul class="registration_info_text registration_info_list">
+                        <li>15% off welcome offer</li>
+                        <li>Free shipping, returns and exchanges on all orders</li>
+                        <li>$10 off a purchase on your birthday</li>
+                        <li>Early access to products</li>
+                        <li>Exclusive offers & rewards</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+
+        <section class="subscribe_block">
+            <div class="container">
+                <div class="subscribe_block_flex">
+
+                    <figure class="quote_block">
+                        <img class="quote_photo" src="img/quote_photo.png" alt="photo">
+                        <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                                pulvinar purus condimentum</i>“</figcaption>
+                    </figure>
+
+                    <div class="subscribe_form_block">
+                        <h3 class="subscribe_form_heading">SUBSCRIBE</h3>
+                        <p class="subscribe_form_text">
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class="subscribe_form">
+                            <input class="subscribe_form_field" type="email" placeholder="Enter Your Email">
+
+
+                            <button class="subscribe_form_button" type="submit">Subscribe</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright_and_social_media_block">
+            <div class="container">
+                <div class="copyright_and_social_media_flex">
+                    <div class="copyright">&copy; 2022 Brand All Rights Reserved
+                    </div>
+
+                    <nav class="social_media_block">
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-telegram"></i>
+
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-vk"></i>
+                            </a>
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+</body>

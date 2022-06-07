@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BRAND OF LUXURIOUS FASHION</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/fe6bbb5658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_flex">
+                <div class="header_left">
+                    <div class="header_icon_1 icon_padding_bottom icon_hover"><a href="index.html">
+                            <img src="img/logo_1.svg" alt="logo_1"></a>
+                    </div>
+                    <div class="header_icon_2 icon_padding_bottom"><img src="img/logo_2.svg" alt="search"></div>
+                    <!--Будет поле поиска?-->
+                </div>
+
+                <nav class="header_right">
+                    <div class="header_icon_3">
+                        <img class="icon_hover" src="img/logo_3.svg" alt="menu">
+                        <div class="mega-box">
+                            <div class="mega-item">
+                                <img class="closing_logo" src="img/close_the_block.svg" alt="close">
+                                <!--Закрытие меню по клику пока не работает-->
+
+                                <h3 class="mega-heading">MENU</h3>
+
+                                <h4 class="menu_heading">MEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Bags</a>
+                                <a class="mega-link" href="#">Denim</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+
+                                <h4 class="menu_heading">WOMEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+
+                                <h4 class="menu_heading">KIDS</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+                                <a class="mega-link" href="#">Bags</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header_icon_4 icon_padding_bottom">
+                        <a href="registration_form.html"><img class="icon_hover" src="img/logo_4.svg" alt="profile">
+                        </a>
+                    </div>
+                    <div class="header_icon_5 icon_padding_bottom icon_hover"><a href="#"><img src="img/logo_5.svg"
+                                alt="basket"></a></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="product_page_main">
+        <div class="container">
+            <div class="new_arrivals_page_flex">
+                <h2 class="new_arrivals_logo">NEW ARRIVALS</h2>
+                <ul class="catalog_menu">
+                    <!--Breadcrumb-->
+                    <li><a class="catalog_menu_item" href="#">Home</a></li>
+                    <li><a class="catalog_menu_item" href="#">Women</a></li>
+                    <li><a class="catalog_menu_item_current" href="#">New Arrivals</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <section class="product_photo_block">
+        <div class="container">
+            <div class="product_photo_flex">
+                <a class="nav_arrow_link" href="#"><i class="fa fa-solid fa-angle-left nav_arrow"></i></a>
+                <img class="product_photo" src="img/moschino_product_card_photo.png" alt="moschino product photo">
+                <a class="nav_arrow_link" href="#"><i class="fa fa-solid fa-angle-right nav_arrow"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product_descr_block">
+        <div class="container">
+            <div class="product_descr_flex">
+                <h2 class="product_descr_header">WOMEN COLLECTION</h2>
+                <hr class="product_descr_pink_line">
+                <h2 class="product_descr_product_name">MOSCHINO CHEAP AND CHIC</h2>
+                <p class="product_descr">Compellingly actualize fully researched processes before proactive
+                    outsourcing.<br>Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely<br>visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product_descr_product_price">$561</p>
+
+                <hr class="product_descr_grey_line">
+
+                <!-- Будет форма для выбора нужных опций? -->
+
+                <form class="choose_product_options_flex" action="#">
+                    <div class="flex_form">
+                        <!-- Без выпадающего списка -->
+                        <div class="choose_color_block choose_text">Choose color <img class="arrow_down"
+                                src="img/arrow_down.svg" alt="arrow_down"></div>
+
+                        <!-- Без выпадающего списка -->
+                        <div class="choose_size_block choose_text">Choose size <img class="arrow_down"
+                                src="img/arrow_down.svg" alt="arrow_down"></div>
+
+                        <!-- Без выпадающего списка -->
+                        <div class="choose_quantity_block choose_text">Quantity <img class="arrow_down"
+                                src="img/arrow_down.svg" alt="arrow_down"></div>
+                    </div>
+
+                    <div class="add_to_cart_button_flex">
+                        <!-- <button class="add_to_cart_button" type="submit"><img class="cart" src="img/add_to_cart.svg"
+                                alt="cart">Add to Cart</button> -->
+
+                        <!--Заменила иконку тележки, чтобы можно было менять цвет при наведении -->
+
+                        <button class="add_to_cart_button" type="submit"><i class="fa fa-solid fa-cart-shopping"></i>Add
+                            to Cart</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured_items_block item-sec recommend_products_block">
+        <div class="container">
+            <div class="item-flex">
+                <div class="item">
+                    <a class="item-link" href="#">
+                        <img class="item-pic" src="img/product_4.png" alt="product_4">
+                        <div class="txt-box">
+                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="item-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                            <p class="add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a class="item-link" href="#">
+                        <img class="item-pic" src="img/product_3.png" alt="product_3">
+                        <div class="txt-box">
+                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="item-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                            <p class="add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a class="item-link" href="#">
+                        <img class="item-pic" src="img/product_6.png" alt="product_6">
+                        <div class="txt-box">
+                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="item-price">$52.00</p>
+                        </div>
+                    </a>
+                    <div class="add-box">
+                        <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                            <p class="add-desc">Add to Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+
+        <section class="subscribe_block">
+            <div class="container">
+                <div class="subscribe_block_flex">
+
+                    <figure class="quote_block">
+                        <img class="quote_photo" src="img/quote_photo.png" alt="photo">
+                        <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <i>a
+                                pulvinar purus condimentum</i>“
+                        </figcaption>
+                    </figure>
+
+                    <div class="subscribe_form_block">
+                        <h3 class="subscribe_form_heading">SUBSCRIBE</h3>
+                        <p class="subscribe_form_text">
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class="subscribe_form">
+                            <input class="subscribe_form_field" type="email" placeholder="Enter Your Email">
+
+
+                            <button class="subscribe_form_button" type="submit">Subscribe</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright_and_social_media_block">
+            <div class="container">
+                <div class="copyright_and_social_media_flex">
+                    <div class="copyright">&copy; 2022 Brand All Rights Reserved
+                    </div>
+
+                    <nav class="social_media_block">
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-telegram"></i>
+
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-vk"></i>
+                            </a>
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
