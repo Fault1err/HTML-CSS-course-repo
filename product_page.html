@@ -71,107 +71,121 @@
         </div>
     </header>
 
-    <main class="banner_logo">
+    <main class="product_page_main">
         <div class="container">
-            <div class="logo_flex">
-                <div class="man_photo"><img src="img/man_photo_clean.png" alt="man_photo"></div>
-                <!--Картинку скадрировала, убрала лишний фон, но почему-то остался зазор внизу-->
-
-                <div class="logo">
-                    <h1 class="logo_1">The Brand</h1>
-                    <p class="logo_2">OF LUXURIOUS <span class="pink_text">FASHION</span></p>
-                </div>
+            <div class="new_arrivals_page_flex">
+                <h2 class="new_arrivals_logo">NEW ARRIVALS</h2>
+                <ul class="catalog_menu">
+                    <!--Breadcrumb-->
+                    <li><a class="catalog_menu_item" href="#">Home</a></li>
+                    <li><a class="catalog_menu_item" href="#">Women</a></li>
+                    <li><a class="catalog_menu_item_current" href="#">New Arrivals</a></li>
+                </ul>
+                </nav>
             </div>
         </div>
     </main>
-    </div>
 
-    <section class="offer_section">
+    <section class="product_photo_block">
         <div class="container">
-            <div class="offer_flex">
-                <div class="offer_1_1">
-                    <p class="offer_white_text">30% OFF<br><a class="offer_white_text_link" href="#"><span
-                                class="offer_pink_text">FOR WOMEN</span></p></a>
-                </div>
-
-                <div class="offer_1_2">
-                    <p class="offer_white_text">HOT DEAL<br><a class="offer_white_text_link" href="#"><span
-                                class="offer_pink_text">FOR MEN</span></p></a>
-                </div>
-
-                <div class="offer_1_3">
-                    <p class="offer_white_text">NEW ARRIVALS<br><a class="offer_white_text_link" href="#"><span
-                                class="offer_pink_text">FOR KIDS</span></p></a>
-                </div>
-            </div>
-
-            <div class="offer_2">
-                <p class="offer_white_text">LUXURIOUS & TRENDY<br><a class="offer_white_text_link" href="#"><span
-                            class="offer_pink_text">ACCESORIES </span></p>
-                </a>
+            <div class="product_photo_flex">
+                <a class="nav_arrow_block" href="#"><i class="fa fa-solid fa-angle-left nav_arrow"></i></a>
+                <img class="product_photo" src="img/moschino_product_card_photo.png" alt="moschino product photo">
+                <a class="nav_arrow_block" href="#"><i class="fa fa-solid fa-angle-right nav_arrow"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="featured_items_block item-sec">
+    <section class="product_descr_block">
         <div class="container">
-            <h2 class="featured_items_heading">Featured Items</h2>
-            <p class="featured_items_text">Shop for items based on what we featured in this week</p>
+            <div class="product_descr_flex">
+                <h2 class="product_descr_header">WOMEN COLLECTION</h2>
+                <hr class="product_descr_pink_line">
+                <h2 class="product_descr_product_name">MOSCHINO CHEAP AND CHIC</h2>
+                <p class="product_descr">Compellingly actualize fully researched processes before proactive
+                    outsourcing.<br>Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely<br>visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product_descr_product_price">$561</p>
+
+                <hr class="product_descr_grey_line">
+
+                <!-- Будет форма для выбора нужных опций? -->
+
+                <form class="choose_product_options_flex" action="#">
+                    <div class="flex_form">
+                        <details class="choose_option">
+                            <summary class="choose_summary">Choose color<img class="arrow_down" src="img/arrow_down.svg"
+                                    alt=""></summary>
+                            <ul class="choose_list">
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">black</span> </li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">grey</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">white</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">beige</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">brown</span></li>
+                            </ul>
+                        </details>
+
+                        <details class="choose_option">
+                            <summary class="choose_summary">Choose size<img class="arrow_down" src="img/arrow_down.svg"
+                                    alt=""></summary>
+                            <ul class="choose_list">
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">XS</span> </li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">S</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">M</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">L</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">XL</span></li>
+                            </ul>
+                        </details>
+
+                        <details class="choose_option">
+                            <summary class="choose_summary">Quantity<img class="arrow_down" src="img/arrow_down.svg"
+                                    alt=""></summary>
+                            <ul class="choose_list">
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">1</span> </li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">2</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">3</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">4</span></li>
+                                <li class="choose_list_margin"><input type="checkbox"><span
+                                        class="choose_list_line">5</span></li>
+                            </ul>
+                        </details>
+                    </div>
+
+
+                    <div class="add_to_cart_button_flex">
+                        <!-- <button class="add_to_cart_button" type="submit"><img class="cart" src="img/add_to_cart.svg"
+                                alt="cart">Add to Cart</button> -->
+
+                        <!--Заменила иконку тележки, чтобы можно было менять цвет при наведении -->
+
+                        <button class="add_to_cart_button" type="submit"><i class="fa fa-solid fa-cart-shopping"></i>Add
+                            to Cart</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured_items_block item-sec recommend_products_block">
+        <div class="container">
             <div class="item-flex">
                 <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
-                        <img class="item-pic" src="img/product_1.png" alt="product_1">
-                        <div class="txt-box">
-                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
-                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
-                        <img class="item-pic" src="img/product_2.png" alt="product_2">
-                        <div class="txt-box">
-                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
-                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href=""><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
-                        <img class="item-pic" src="img/product_3.png" alt="product_3">
-                        <div class="txt-box">
-                            <p class="item-brand">ELLERY X M'O CAPSULE</p>
-                            <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="item-price">$52.00</p>
-                        </div>
-                    </a>
-                    <div class="add-box">
-                        <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
-                            <p class="add-desc">Add to Cart</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
+                    <a class="item-link" href="#">
                         <img class="item-pic" src="img/product_4.png" alt="product_4">
                         <div class="txt-box">
                             <p class="item-brand">ELLERY X M'O CAPSULE</p>
@@ -186,10 +200,10 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
-                        <img class="item-pic" src="img/product_5.png" alt="product_5">
+                    <a class="item-link" href="#">
+                        <img class="item-pic" src="img/product_3.png" alt="product_3">
                         <div class="txt-box">
                             <p class="item-brand">ELLERY X M'O CAPSULE</p>
                             <p class="item-desc">Known for her sculptural takes on traditional tailoring, Australian
@@ -203,9 +217,9 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="item">
-                    <a class="item-link" href="product_page.html">
-                        <!-- Ссылка на страницу продукта -->
+                    <a class="item-link" href="#">
                         <img class="item-pic" src="img/product_6.png" alt="product_6">
                         <div class="txt-box">
                             <p class="item-brand">ELLERY X M'O CAPSULE</p>
@@ -222,38 +236,12 @@
                 </div>
             </div>
 
-            <div class="catalog_link_button">
-                <a class="catalog_link" href="#">Browse All Product</a>
-                <!--Будет ссылка на страницу каталога товаров-->
-            </div>
         </div>
     </section>
 
+
     <footer class="footer">
-        <section class="shop_statements_block">
-            <div class="container">
-                <div class="statements_flex">
-                    <div class="statement_block">
-                        <img class="statements_logo" src="img/statement_logo_1.svg" alt="logo1">
-                        <h3 class="statements_heading">Free Delivery</h3>
-                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                    <div class="statement_block">
-                        <img class="statements_logo" src="img/statement_logo_2.svg" alt="logo2">
-                        <h3 class="statements_heading_2">Sales & discounts</h3>
-                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                    <div class="statement_block">
-                        <img class="statements_logo" src="img/statement_logo_3.svg" alt="logo3">
-                        <h3 class="statements_heading">Quality assurance</h3>
-                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
-                            innov tion with extensive models</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <section class="subscribe_block">
             <div class="container">
@@ -261,8 +249,10 @@
 
                     <figure class="quote_block">
                         <img class="quote_photo" src="img/quote_photo.png" alt="photo">
-                        <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
-                                pulvinar purus condimentum</i>“</figcaption>
+                        <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <i>a
+                                pulvinar purus condimentum</i>“
+                        </figcaption>
                     </figure>
 
                     <div class="subscribe_form_block">
@@ -307,7 +297,3 @@
             </div>
         </section>
     </footer>
-
-</body>
-
-</html>
