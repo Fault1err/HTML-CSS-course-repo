@@ -1,0 +1,127 @@
+.registration_main {
+    background: $color_lightpink_white;
+    height: 148px;
+}
+
+@mixin reg_par ($fw, $fs, $lh, $pt, $pr, $pb, $pl) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+@mixin reg_text_par ($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin reg__pad ($pt, $pr, $pb, $pl) {
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+.registration_logo {
+    @include reg_par(400, 24px, 29px, 59px, 0, 60px, 0);
+    color: $color_pink;
+}
+
+.registration_form_and_info_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration {
+    padding-top: 64px;
+}
+
+.registration_form_text {
+    @include reg_par(300, 16px, 19px, 0, 0, 25px, 0);
+    color: $color_black_lighter;
+}
+
+.form_text_field {
+    @include reg__pad (13px, 0, 16px, 17px);
+    width: 87%;
+}
+
+.field__margin {
+    margin-bottom: 20px;
+}
+
+.radio__margin_top {
+    margin-top: 34px;
+}
+
+.radio__margin_bottom {
+    margin-bottom: 34px;
+}
+
+.gender_radio_button {
+    margin-right: 10px;
+}
+
+
+.radio_right {
+    margin-left: 20px;
+}
+
+.radio_button_text {
+    @include reg_text_par(300, 11px, 13px);
+    color: $color_black;
+}
+
+.registration_form_password_description {
+    @include reg_text_par(300, 13px, 16px);
+    margin-top: 15px;
+    margin-bottom: 39px;
+    color: $color_light_grey;
+    width: 359px;
+}
+
+.registration_submit_button {
+    @include reg_par(400, 14px, 17px, 16px, 0, 17px, 29px);
+    border: 1px solid $color_pink;
+    outline: none;
+    color: $color_white;
+    background: $color_pink;
+    margin-bottom: 96px;
+}
+
+.registration_submit_button:hover {
+    background-color: $color_white;
+    color: $color_pink;
+    border: $bd-width solid $color_pink;
+}
+
+.arrow_pic {
+    padding-left: 20px;
+    padding-right: 29px;
+}
+
+.registration_info_block {
+    width: 660px;
+}
+
+.registration_info_heading {
+    margin-top: 64px;
+    @include reg_par(300, 24px, 29px, 0, 0, 22px, 0);
+    color: $color_black;
+}
+
+.registration_info_text {
+    @include reg_text_par(300, 24px, 29px);
+    color: $color_black;
+}
+
+.registration_info_list {
+    margin-top: 21px;
+    list-style-image: url(img/check-mark.svg);
+    list-style-position: inside;
+    line-height: 1.5;
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BRAND OF LUXURIOUS FASHION</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/fe6bbb5658.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_flex">
+                <div class="header_left">
+                    <div class="header_icon_1 icon_padding_bottom icon_hover"><a href="index.html">
+                            <img src="img/logo_1.svg" alt="logo_1"></a>
+                    </div>
+                    <div class="header_icon_2 icon_padding_bottom"><img src="img/logo_2.svg" alt="search"></div>
+                    <!--Будет поле поиска?-->
+                </div>
+
+                <nav class="header_right">
+                    <div class="header_icon_3">
+                        <img class="icon_hover" src="img/logo_3.svg" alt="menu">
+                        <div class="mega-box">
+                            <div class="mega-item">
+                                <img class="closing_logo" src="img/close_the_block.svg" alt="close">
+                                <!--Закрытие меню по клику пока не работает-->
+
+                                <h3 class="mega-heading">MENU</h3>
+
+                                <h4 class="menu_heading">MEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Bags</a>
+                                <a class="mega-link" href="#">Denim</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+
+                                <h4 class="menu_heading">WOMEN</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+
+                                <h4 class="menu_heading">KIDS</h4>
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Shirts</a>
+                                <a class="mega-link" href="#">Bags</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header_icon_4 icon_padding_bottom">
+                        <a href="registration_form.html"><img class="icon_hover" src="img/logo_4.svg" alt="profile">
+                        </a>
+                    </div>
+                    <div class="header_icon_5 icon_padding_bottom icon_hover"><a href="cart.html"><img
+                                src="img/logo_5.svg" alt="basket"></a></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="product_page_main">
+        <div class="container">
+            <div class="new_arrivals_page_flex">
+                <h2 class="new_arrivals_logo">NEW ARRIVALS</h2>
+                <ul class="catalog_menu">
+                    <!--Breadcrumb-->
+                    <li><a class="catalog_menu_item" href="#">Home</a></li>
+                    <li><a class="catalog_menu_item" href="#">Men</a></li>
+                    <li><a class="catalog_menu_item_current" href="#">New Arrivals</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container">
+            <div class="filter_block_flex">
+                <div class="filter_list">
+                    <div class="filter_name">Filter<i class="fa-solid fa-arrow-down-wide-short"></i></div>
+                    <div class="filter_box">
+                        <div class="filter_margin filter_name_box choose_summary summary__margin_bottom ">Filter<i
+                                class="fa-solid fa-arrow-down-wide-short"></i></div>
+
+                        <details class="">
+                            <summary class="choose_summary__bd summary__margin_bottom">Category</summary>
+
+                            <ul class="filter_text">
+                                <li class="filter_list_li">Accessories</li>
+                                <li class="filter_list_li">Bags</li>
+                                <li class="filter_list_li">Denim</li>
+                                <li class="filter_list_li">Hoodies & Sweatshirts</li>
+                                <li class="filter_list_li">Jackets & Coats</li>
+                                <li class="filter_list_li">Polos</li>
+                                <li class="filter_list_li">Shirts</li>
+                                <li class="filter_list_li">Shoes</li>
+                                <li class="filter_list_li">Sweaters & Knits</li>
+                                <li class="filter_list_li">T-Shirts</li>
+                                <li class="filter_list_li_last">Tanks</li>
+                            </ul>
+
+                        </details>
+
+                        <details>
+                            <summary class="choose_summary__bd1 summary__margin_bottom">Brand</summary>
+                            <ul class="filter_text">
+                                <li class="filter_list_li">Adidas</li>
+                                <li class="filter_list_li">Benetton</li>
+                                <li class="filter_list_li">Calvin Klein</li>
+                                <li class="filter_list_li">Gerry Weber</li>
+                                <li class="filter_list_li">Desigual</li>
+                                <li class="filter_list_li">Esprit</li>
+                                <li class="filter_list_li">Jack & Jones</li>
+                                <li class="filter_list_li">Moschino</li>
+                                <li class="filter_list_li">Polo Ralph Lauren</li>
+                                <li class="filter_list_li">S.Oliver</li>
+                                <li class="filter_list_li">Tommy Hilfiger</li>
+                                <li class="filter_list_li_last">Vero Moda</li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary class="choose_summary__bd2 summary__margin_bottom">Designer</summary>
+                            <ul class="filter_text">
+                                <li class="filter_list_li">Calvin Klein</li>
+                                <li class="filter_list_li">Ralph Lauren</li>
+                                <li class="filter_list_li">Jean Paul Gaultier</li>
+                                <li class="filter_list_li">Karl Lagerfeld</li>
+                                <li class="filter_list_li">Giorgio Armani</li>
+                                <li class="filter_list_li">Gianni Versace</li>
+                                <li class="filter_list_li">Franco Moschino</li>
+                                <li class="filter_list_li_last">Gianfranco Ferre</li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+
+
+                <div class="filter_options">
+                    <details class="choose_option_catalog options_margin">
+                        <summary class="choose_summary">Trending now<img class="arrow_down" src="img/arrow_down.svg"
+                                alt=""></summary>
+
+                        <ul class="choose_list">
+                            <li class="list_padding_bottom"><input type="checkbox"><span
+                                    class="choose_list_line">Oversize</span></li>
+                            <li class="list_padding_bottom"><input type="checkbox"><span class="choose_list_line">Maxi
+                                    Skirts</span></li>
+                            <li class="list_padding_bottom"><input type="checkbox"><span
+                                    class="choose_list_line">Platform Shoes</span></li>
+                            <li class="list_padding_bottom"><input type="checkbox"><span
+                                    class="choose_list_line">Low-Rise Pants</span></li>
+                            <li class="list_padding_bottom"><input type="checkbox"><span class="choose_list_line">The
+                                    Color Purple</span></li>
+                            <li class="list_padding_bottom"><input type="checkbox"><span
+                                    class="choose_list_line">Cutouts</span></li>
+                            <li><input type="checkbox"><span class="choose_list_line">Flared Jeans</span></li>
+                        </ul>
+
+                    </details>
+                    <details class="choose_option_catalog options_margin">
+                        <summary class="choose_summary">Size<img class="arrow_down" src="img/arrow_down.svg" alt="">
+                        </summary>
+
+                        <ul class="choose_list">
+                            <li class="choose_list_margin"><input type="checkbox"><span
+                                    class="choose_list_line">XS</span> </li>
+                            <li class="choose_list_margin"><input type="checkbox"><span
+                                    class="choose_list_line">S</span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span
+                                    class="choose_list_line">M</span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span
+                                    class="choose_list_line">L</span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span
+                                    class="choose_list_line">XL</span></li>
+                        </ul>
+
+                    </details>
+                    <details class="choose_option_catalog">
+                        <summary class="choose_summary">Price<img class="arrow_down" src="img/arrow_down.svg" alt="">
+                        </summary>
+
+                        <ul class="choose_list">
+                            <li class="choose_list_margin"><input type="checkbox"><span class="choose_list_line">0 -
+                                    75 $</span> </li>
+                            <li class="choose_list_margin"><input type="checkbox"><span class="choose_list_line">75
+                                    - 150 $</span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span class="choose_list_line">150
+                                    - 225 $ </span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span class="choose_list_line">225
+                                    - 300 $</span></li>
+                            <li class="choose_list_margin"><input type="checkbox"><span class="choose_list_line">>
+                                    300 $</span></li>
+                        </ul>
+                    </details>
+                </div>
+
+
+
+            </div>
+
+            <section class="item-sec">
+                <div class="container">
+                    <div class="item-flex">
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_1.png" alt="product_1">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_2.png" alt="product_2">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href=""><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_3.png" alt="product_3">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_4.png" alt="product_4">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_5.png" alt="product_5">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_6.png" alt="product_6">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_7.png" alt="product_1">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_8.png" alt="product_1">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="item-link" href="product_page.html">
+                                <!-- Ссылка на страницу продукта -->
+                                <img class="item-pic" src="img/catalog_product_9.png" alt="product_1">
+                                <div class="txt-box">
+                                    <p class="item-brand">ELLERY X M'O CAPSULE</p>
+                                    <p class="item-desc">Known for her sculptural takes on traditional tailoring,
+                                        Australian
+                                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                    <p class="item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="add-box">
+                                <a class="add" href="#"><img class="cart" src="img/add_to_cart_white.svg" alt="cart">
+                                    <p class="add-desc">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination pagination_center pag_style">
+                            <li class="page-item">
+                                <a class="page-link pag_style" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link pag_style pag_color" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link pag_style" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link pag_style" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link pag_style" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <section class="shop_statements_block">
+            <div class="container">
+                <div class="statements_flex">
+                    <div class="statement_block">
+                        <img class="statements_logo" src="img/statement_logo_1.svg" alt="logo1">
+                        <h3 class="statements_heading">Free Delivery</h3>
+                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive models.</p>
+                    </div>
+                    <div class="statement_block">
+                        <img class="statements_logo" src="img/statement_logo_2.svg" alt="logo2">
+                        <h3 class="statements_heading_2">Sales & discounts</h3>
+                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive models.</p>
+                    </div>
+                    <div class="statement_block">
+                        <img class="statements_logo" src="img/statement_logo_3.svg" alt="logo3">
+                        <h3 class="statements_heading">Quality assurance</h3>
+                        <p class="statements_text">Worldwide delivery on all. Authorit tively morph next-generation
+                            innov tion with extensive models</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe_block">
+            <div class="container">
+                <div class="subscribe_block_flex">
+
+                    <figure class="quote_block">
+                        <img class="quote_photo" src="img/quote_photo.png" alt="photo">
+                        <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                                pulvinar purus condimentum</i>“</figcaption>
+                    </figure>
+
+                    <div class="subscribe_form_block">
+                        <h3 class="subscribe_form_heading">SUBSCRIBE</h3>
+                        <p class="subscribe_form_text">
+                            FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class="subscribe_form">
+                            <input class="subscribe_form_field" type="email" placeholder="Enter Your Email">
+
+
+                            <button class="subscribe_form_button" type="submit">Subscribe</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright_and_social_media_block">
+            <div class="container">
+                <div class="copyright_and_social_media_flex">
+                    <div class="copyright">&copy; 2022 Brand All Rights Reserved
+                    </div>
+
+                    <nav class="social_media_block">
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-telegram"></i>
+
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-vk"></i>
+                            </a>
+                            <a class="social_media_logo" href="#">
+                                <i class="fa fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
