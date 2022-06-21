@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BRAND OF LUXURIOUS FASHION</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/fe6bbb5658.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="header">
+    <div class="container">
+        <div class="header_flex">
+            <div class="header_left">
+                <div class="header_icon_1 icon_padding_bottom icon_hover"><a href="index.html">
+                        <img src="img/logo_1.svg" alt="logo_1"></a>
+                </div>
+                <div class="header_icon_2 icon_padding_bottom"><img src="img/logo_2.svg" alt="search"></div>
+                <!--Будет поле поиска?-->
+            </div>
+
+            <nav class="header_right">
+                <div class="header_icon_3">
+                    <img class="icon_hover" src="img/logo_3.svg" alt="menu">
+                    <div class="mega-box">
+                        <div class="mega-item">
+                            <img class="closing_logo" src="img/close_the_block.svg" alt="close">
+                            <!--Закрытие меню по клику пока не работает-->
+
+                            <h3 class="mega-heading">MENU</h3>
+
+                            <h4 class="menu_heading">MEN</h4>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Bags</a>
+                            <a class="mega-link" href="#">Denim</a>
+                            <a class="mega-link" href="#">T-Shirts</a>
+
+                            <h4 class="menu_heading">WOMEN</h4>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Jackets & Coats</a>
+                            <a class="mega-link" href="#">Polos</a>
+                            <a class="mega-link" href="#">T-Shirts</a>
+                            <a class="mega-link" href="#">Shirts</a>
+
+                            <h4 class="menu_heading">KIDS</h4>
+                            <a class="mega-link" href="#">Accessories</a>
+                            <a class="mega-link" href="#">Jackets & Coats</a>
+                            <a class="mega-link" href="#">Polos</a>
+                            <a class="mega-link" href="#">T-Shirts</a>
+                            <a class="mega-link" href="#">Shirts</a>
+                            <a class="mega-link" href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header_icon_4 icon_padding_bottom">
+                    <a href="registration_form.html"><img class="icon_hover" src="img/logo_4.svg" alt="profile">
+                    </a>
+                </div>
+                <div class="header_icon_5 icon_padding_bottom icon_hover"><a href="#"><img src="img/logo_5.svg"
+                            alt="basket"></a></div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="cart_page_main">
+    <div class="container">
+        <div class="new_arrivals_page_flex">
+            <h2 class="new_arrivals_logo">Shopping Cart</h2>
+
+        </div>
+    </div>
+</main>
+
+<section class="registration_form_and_info">
+    <div class="container">
+        <div class="content_cart_page">
+            <form action="#">
+                <div class="shopping_cart_flex">
+                    <div class="products_in_cart_flex">
+                        <div class="product_in_cart_block">
+                            <a class="cart_link" href="product_page.html"><img class="cart_product_img"
+                                    src="img/cart_product_1.png" alt="product_1"></a>
+                            <div class="cart_product_descr_flex">
+                                <a class="cart_product_link" href="product_page.html">
+                                    <h2 class="cart_product_heading">MANGO PEOPLE <br> T-SHIRT</h2>
+                                </a>
+                                <span class="cart_product_text">Price: <span
+                                        class="cart_product_text_pink">$300</span></span>
+                                <span class="cart_product_text">Color: <span
+                                        class="cart_product__text_inside">Red</span></span>
+                                <span class="cart_product_text">Size: <span
+                                        class="cart_product__text_inside">XL</span></span>
+                                <span class="cart_product_text">Quantity: <input class="cart_quantity_input"
+                                        type="number" min="1" max="5"></span>
+                            </div>
+                            <div class="cart_delete_product"><img src="img/close_the_block.svg" alt="delete product">
+                            </div>
+                        </div>
+                        <div class="product_in_cart_block">
+                            <a href="product_page.html"><img class="cart_product_img" src="img/cart_product_2.png"
+                                    alt="product_1"></a>
+                            <div class="cart_product_descr_flex">
+                                <a class="cart_product_link" href="product_page.html">
+                                    <h2 class="cart_product_heading">MANGO PEOPLE <br> T-SHIRT</h2>
+                                </a>
+                                <span class="cart_product_text">Price: <span
+                                        class="cart_product_text_pink">$300</span></span>
+                                <span class="cart_product_text">Color: <span
+                                        class="cart_product__text_inside">Red</span></span>
+                                <span class="cart_product_text">Size: <span
+                                        class="cart_product__text_inside">XL</span></span>
+                                <span class="cart_product_text">Quantity: <input class="cart_quantity_input"
+                                        type="number" min="1" max="5"></span>
+                            </div>
+                            <div class="cart_delete_product"><img src="img/close_the_block.svg" alt="delete product">
+                            </div>
+                        </div>
+                        <div class="cart_buttons_flex">
+                            <div><button class="reset_cart_button" type="reset">Clear Shopping
+                                Cart</button></div>
+                            <div><button class="continue_shopping_button" type="button">Continue Shopping</button></div>
+                        </div>
+                    </div>
+
+                    <div class="make_an_order_form_flex">
+                        <div class="make_an_order_form">
+                            <h2 class="shipping_address">SHIPPING ADRESS
+                            </h2>
+                            <input class="input_text_cart" type="text" placeholder="Bangladesh"><br>
+                            <input class="input_text_cart" type="text" placeholder="State"><br>
+                            <input class="input_text_cart" type="text" placeholder="Postcode / ZIP"><br>
+
+                            <button class="get_a_quote_button" type="submit">Get A Quote</button>
+                        </div>
+
+                        <div class="proceed_cart_block">
+                            <div class="subtotal_cart_flex">
+                                <h3 class="proceed_cart_heading">Subtotal</h3>
+                                <div class="subtotal_block">$900</div>
+                            </div>
+                            <div class="grand_total_flex">
+                                <h2 class="grand_total_block">Grand Total</h2>
+                                <div class="total_block">$900</div>
+                            </div>
+                            <hr class="hr_cart_total">
+                            <button class="checkout_button" type="submit">Proceed To Checkout</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</section>
+
+<footer class="footer">
+
+
+    <section class="subscribe_block">
+        <div class="container">
+            <div class="subscribe_block_flex">
+
+                <figure class="quote_block">
+                    <img class="quote_photo" src="img/quote_photo.png" alt="photo">
+                    <figcaption class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                            pulvinar purus condimentum</i>“</figcaption>
+                </figure>
+
+                <div class="subscribe_form_block">
+                    <h3 class="subscribe_form_heading">SUBSCRIBE</h3>
+                    <p class="subscribe_form_text">
+                        FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="subscribe_form">
+                        <input class="subscribe_form_field" type="email" placeholder="Enter Your Email">
+
+
+                        <button class="subscribe_form_button" type="submit">Subscribe</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright_and_social_media_block">
+        <div class="container">
+            <div class="copyright_and_social_media_flex">
+                <div class="copyright">&copy; 2022 Brand All Rights Reserved
+                </div>
+
+                <nav class="social_media_block">
+                    <a class="social_media_logo" href="#">
+                        <i class="fa fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a class="social_media_logo" href="#">
+                        <i class="fa fa-brands fa-telegram"></i>
+
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-vk"></i>
+                        </a>
+                        <a class="social_media_logo" href="#">
+                            <i class="fa fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+</footer>

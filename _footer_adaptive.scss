@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+
+    .subscribe_block_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe_block {
+        background: url(img/background_subscribe_filter_edited.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .quote_text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $color_dark_blue;
+        width: 100%;
+    }
+
+    .subscribe_form_block {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 140px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .copyright_and_social_media_flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
