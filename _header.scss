@@ -1,0 +1,129 @@
+.header {
+    background: $color_black_lighter;
+}
+
+.header_content {
+    padding: 3% 2% 0 0;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.header_left {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_padding_bottom {
+    padding-bottom: 20px;
+}
+
+.header_icon_1 {
+    margin-right: 41px;
+}
+
+.header_right {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_hover:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+.mega-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color_black;
+    padding-bottom: 24px;
+    padding-left: 34px;
+    padding-top: 0px;
+    padding-right: 143px;
+}
+
+.header_icon_3 {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.header_icon_3:hover .mega-box {
+    display: flex;
+}
+
+.mega-box {
+    background: $color_white;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    padding: 37px;
+    top: 45px;
+    display: none;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.mega-box::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $color_white;
+    position: absolute;
+    top: -5px;
+    left: 11px;
+    transform: rotate(45deg);
+    border-top: $bd-width solid $color_white;
+    border-left: $bd-width solid $color_white;
+}
+
+.mega-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.closing_logo {
+    width: 12px;
+    padding-left: 203px;
+}
+
+.closing_logo:hover .mega-box {
+    display: none;
+}
+
+.menu__par {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.menu_heading {
+    @extend .menu__par;
+    color: $color_pink;
+    padding-bottom: 12px;
+    padding-top: 20px;
+    padding-left: 33px;
+}
+
+.mega-link {
+    @extend .menu__par;
+    padding-bottom: 11px;
+    color: $color_grey;
+    text-decoration: none;
+    padding-left: 54px;
+}
+
+.mega-link:last-of-type {
+    padding-bottom: 94px;
+}
+
+.mega-link:hover {
+    color: $color_pink;
+}

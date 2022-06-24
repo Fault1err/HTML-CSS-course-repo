@@ -1,0 +1,207 @@
+.filter_block_flex {
+    display: flex;
+    width: 616px;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-bottom: 65px;
+}
+
+.choose_summary:hover {
+    color: $color_bright_coral;
+}
+
+.filter_list {
+    position: relative;
+}
+
+.filter_list:hover .filter_box {
+    display: flex;
+}
+
+@mixin catalog_par ($fw, $fs, $lh, $pt, $pr, $pb, $pl) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+.filter_name {
+    @include catalog_par(600, 14px, 17px, 0, 0, 0, 0);
+    color: $color_black;
+    text-transform: uppercase;
+}
+
+.filter_name_box {
+    width: 100%;
+    font-weight: 600;
+    color: $color_bright_coral;
+    padding-top: 13px;
+}
+
+.filter_box {
+    @include catalog_par(400, 14px, 17px, 0, 0, 0, 0);
+    width: $site-width / 4.5;
+    background: $color_white;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    padding-left: 17px;
+    top: 0px;
+    display: none;
+    z-index: 2;
+    text-transform: uppercase;
+    color: $color_grey;
+    margin-left: 0px;
+    flex-direction: column;
+    margin-left: -17px;
+    margin-top: -13px;
+    transition: all 0.3s;
+}
+
+.filter_options {
+    display: flex;
+}
+
+.trending_now_option {
+    position: relative;
+}
+
+.options_margin {
+    margin-right: 28px;
+}
+
+.fa-arrow-down-wide-short {
+    padding-left: 11px;
+}
+
+.choose_summary {
+    list-style-type: none;
+}
+
+.catalog__pad {
+    padding-top: 11px;
+    padding-right: 15px;
+    padding-bottom: 11px;
+    padding-left: 11px;
+}
+
+.choose_summary__bd {
+    @extend .catalog__pad;
+    list-style-type: none;
+    border-left: 5px solid $color_bright_coral;
+    position: relative;
+}
+
+.choose_summary__bd::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    height: 2px;
+    margin-left: -37%;
+    background: $color_very_light_grey
+}
+
+.choose_summary__bd1 {
+    @extend .catalog__pad;
+    list-style-type: none;
+    border-left: 5px solid $color_bright_coral;
+    position: relative;
+}
+
+.choose_summary__bd1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    height: 1px;
+    margin-left: -26.5%;
+    background: $color_very_light_grey
+}
+
+.choose_summary__bd2 {
+    @extend .catalog__pad;
+    list-style-type: none;
+    border-left: 5px solid $color_bright_coral;
+    position: relative;
+}
+
+.choose_summary__bd2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    height: 1px;
+    margin-left: -34%;
+    background: $color_very_light_grey
+}
+
+.choose_summary__bd:hover {
+    color: $color_bright_coral;
+}
+
+.summary__margin_bottom {
+    margin-bottom: 24px;
+}
+
+.filter_text {
+    @include catalog_par(400, 14px, 17px, 0, 0, 0, 0);
+    color: #6F6E6E;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+.filter_list_li {
+    padding-bottom: 11px;
+}
+
+.filter_list_li:hover {
+    color: $color_bright_coral;
+}
+
+.filter_list_li_last {
+    padding-bottom: 32px;
+}
+
+.choose_option_catalog {
+    @include catalog_par(400, 14px, 17px, 0, 0, 0, 0);
+    position: relative;
+    text-transform: uppercase;
+    color: $color_grey;
+    margin-left: 23px;
+    width: 100%;
+    display: inline-flex;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.list_padding_bottom {
+    padding-bottom: 6px;
+}
+
+// Bootstrap pagination
+
+.pag_style {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color_light_grey;
+}
+
+.pagination_center {
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 109px;
+}
+
+.pag_color {
+    color: $color_bright_coral;
+}
+
+.page-link:hover {
+    color: $color_bright_coral;
+}
