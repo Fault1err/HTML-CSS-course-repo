@@ -1,0 +1,205 @@
+.cart_page_main {
+    background-color: $color_lightpink_white;
+    margin-bottom: 96px;
+}
+
+.shopping_cart_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_in_cart_block {
+    display: flex;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.product_in_cart_block::last-of-type {
+    margin-bottom: 72px;
+}
+
+//Почему-то не работает 
+
+
+.cart_product_img {
+    display: block;
+}
+
+.cart_product_img:hover {
+    filter: brightness(95%);
+}
+
+.cart_product_link {
+    text-decoration: none;
+}
+
+.cart_product_descr_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin cart_par ($fw, $fs, $lh, $pt, $pr, $pb, $pl) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+
+.cart_product_heading {
+    @include cart_par(400, 24px, 29px, 22px, 37px, 42px, 31px);
+    color: $color_dark_blue;
+    width: 262px;
+}
+
+.cart_delete_product {
+    padding-top: 28px;
+    padding-right: 22px;
+}
+
+.cart_product_text {
+    @include cart_par(400, 22px, 26px, 0, 0, 6px, 31px);
+    color: $color_quite_dark_grey;
+}
+
+.cart_product__text_inside {
+    @include cart_par(400, 22px, 26px, 0, 0, 6px, 0);
+    color: $color_quite_dark_grey;
+}
+
+.cart_product_text_pink {
+    @include cart_par(400, 22px, 26px, 0, 0, 0, 0);
+    color: $color_pink;
+}
+
+.cart_quantity_input {
+    width: 44px;
+    margin-left: 24px;
+    text-align: center;
+}
+
+.reset_cart_button {
+    @include cart_par(300, 14px, 17px, 17px, 41px, 17px, 39px);
+    text-transform: uppercase;
+    color: $color_black;
+    border: 1px solid $color_border_button_grey;
+    background-color: $color_white;
+}
+
+.reset_cart_button:hover {
+    color: $color_white;
+    background-color: $color_bright_coral;
+    border: 1px solid $color_bright_coral;
+}
+
+.continue_shopping_button {
+    @include cart_par(300, 14px, 17px, 17px, 41px, 17px, 39px) text-transform: uppercase;
+    color: $color_black;
+    border: 1px solid $color_border_button_grey;
+    background-color: $color_white;
+    margin-left: 192px;
+    margin-bottom: 128px;
+}
+
+.continue_shopping_button:hover {
+    color: $color_white;
+    background-color: $color_bright_coral;
+    border: 1px solid $color_bright_coral;
+}
+
+.shipping_address {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $color_black_lighter;
+    margin-bottom: 20px;
+}
+
+.input_text_cart {
+    @include cart_par(300, 13px, 16px, 13px, 0, 16px, 16px);
+    color: $color_light_grey;
+    width: 359px;
+    margin-bottom: 20px;
+}
+
+.get_a_quote_button {
+    @include cart_par(300, 11px, 13px, 10px, 14px, 12px, 15px);
+    color: color_border_button_grey;
+    text-transform: uppercase;
+    border: 1px solid $color_border_button_grey;
+    background-color: $color_white;
+    margin-bottom: 57px;
+}
+
+.get_a_quote_button:hover {
+    color: $color_white;
+    background-color: $color_bright_coral;
+    border: 1px solid $color_bright_coral;
+}
+
+.proceed_cart_block {
+    background-color: $color_bg_cart;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtotal_cart_flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.proceed_cart_heading {
+    @include cart_par(400, 11px, 13px, 34px, 0, 0, 0);
+    color: $color_cart_text;
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.subtotal_block {
+    @include cart_par(400, 11px, 13px, 34px, 34px, 0, 25px);
+}
+
+.grand_total_flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grand_total_block {
+    @include cart_par(300, 16px, 19px, 12px, 0, 0, 0);
+    color: $color_black_lighter;
+    text-transform: uppercase;
+}
+
+.total_block {
+    @include cart_par(300, 16px, 19px, 12px, 34px, 21px, 25px);
+    color: $color_black_lighter;
+    text-transform: uppercase;
+    color: $color_bright_coral;
+}
+
+.hr_cart_total {
+    color: $color_hr_cart;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 17px;
+}
+
+.checkout_button {
+    @include cart_par(300, 16px, 19px, 15px, 43px, 16px, 41px);
+    color: $color_white;
+    border: 1px solid $color_bright_coral;
+    background-color: $color_pink;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 42px;
+}
+
+.checkout_button:hover {
+    color: $color_pink;
+    background-color: $color_white;
+}
