@@ -17,10 +17,8 @@ body {
 
 .container {
     max-width: $site-width;
-    /* Здесь можно делать max-width? */
     margin: 0 auto;
 }
-
 
 .banner_logo {
     background: $color_bg_pink;
@@ -28,16 +26,14 @@ body {
 
 .logo_flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.man_photo {
+.man_photo_img {
     margin-top: 12px;
-}
-
-.logo {
-    margin-top: 290px;
-    margin-right: 101px;
+    max-width: 100%;
+    height: auto;
 }
 
 .logo_1 {
@@ -76,7 +72,7 @@ offer_text {
 }
 
 .offer__parameters {
-    width: 360px;
+    width: 31.5%;
     height: 260px;
 }
 
@@ -90,27 +86,31 @@ offer_text {
     @extend .offer__parameters;
     @extend .offer__flex;
     background-image: url(img/offer_1_1.png);
+    transition: all 0.3s;
 }
 
 .offer_1_2 {
     @extend .offer__parameters;
     @extend .offer__flex;
     background-image: url(img/offer_1_2.png);
+    transition: all 0.3s;
 }
 
 .offer_1_3 {
     @extend .offer__parameters;
     @extend .offer__flex;
     background-image: url(img/offer_1_3.png);
+    transition: all 0.3s;
 }
 
 .offer_2 {
     margin-top: 30px;
     margin-bottom: 96px;
-    width: $site-width;
+    width: 100%;
     height: 180px;
     background-image: url(img/offer_2.png);
     @extend .offer__flex;
+    transition: all 0.3s;
 }
 
 .offer_white_text {
@@ -167,7 +167,7 @@ offer_text {
 }
 
 .item {
-    width: 360px;
+    width: 31.6%;
     position: relative;
     /*Потому что у add-box установлен позишн абсолют */
     margin-bottom: 30px;
@@ -175,7 +175,7 @@ offer_text {
 
 .item-link {
     display: block;
-    width: 360px;
+    width: 100%;
     text-decoration: none;
     background: $color_almost_white;
 }
@@ -186,6 +186,7 @@ offer_text {
 
 .item-pic {
     width: 100%;
+    transition: all 0.3s;
 }
 
 .txt-box {
@@ -237,6 +238,7 @@ offer_text {
     justify-content: center;
     align-items: center;
     pointer-events: auto;
+    transition: all 0.3s;
 }
 
 .add-desc {
@@ -244,6 +246,7 @@ offer_text {
     font-size: 14px;
     line-height: 17px;
     color: $color_white;
+    margin-bottom: 0;
 }
 
 .item:hover .add-box {
@@ -272,9 +275,293 @@ offer_text {
     padding-left: 38px;
     padding-right: 38px;
     border: $bd-width solid $color_coral;
+    transition: all 0.3s;
 }
 
 .catalog_link:hover {
     color: $color_white;
     background-color: $color_bright_pink;
+}
+
+
+@media (max-width: 768px) {
+
+    .header_right {
+        width: 25%;
+    }
+
+    .banner__content {
+        padding: 2% 3% 0;
+    }
+
+    .man_photo {
+        max-width: 48%;
+        height: auto;
+    }
+
+    .logo {
+        margin-left: 39px;
+    }
+
+    .offer__content {
+        padding: 2% 3% 0;
+    }
+
+    .item-flex {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .subscribe_block_flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    .quote_block_width {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+
+    .quote_block {
+        width: 100%;
+    }
+
+    .quote_text {
+        padding-bottom: 0;
+    }
+
+    .subscribe_form_heading {
+        @include footer__par(48px, 700, 24px, 167.2%, center);
+    }
+
+    .copyright_and_social_media_flex {
+        width: 95%;
+    }
+
+    .copyright {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 600px) {
+
+    .mega-box {
+        z-index: 2;
+        transition: all 0.3s;
+        transform: translateX(-125px);
+    }
+
+    .mega-box::before {
+        display: none;
+    }
+
+    .header_right {
+        width: 25%;
+    }
+
+    .banner__content {
+        padding: 2% 3% 0;
+    }
+
+    .man_photo {
+        max-width: 48%;
+        height: auto;
+    }
+
+    .logo {
+        margin-left: 39px;
+    }
+
+    .offer__content {
+        padding: 2% 3% 0;
+    }
+
+    .item-flex {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .subscribe_block_flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 140px;
+    }
+
+    .quote_block_width {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+
+    .quote_block {
+        width: 100%;
+    }
+
+    .quote_text {
+        padding-bottom: 0;
+    }
+
+    .subscribe_form_heading {
+        @include footer__par(48px, 700, 24px, 167.2%, center);
+    }
+
+    .copyright_and_social_media__flex {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .copyright {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social_media_block {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .header_right {
+        width: 35%;
+    }
+
+    .man_photo {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        margin-top: 148px;
+        margin-bottom: 149px;
+    }
+
+    .logo_1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .logo_2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mega-box {
+
+        z-index: 2;
+        transition: all 0.3s;
+        transform: translateX(-165px);
+    }
+
+    .mega-box::before {
+        display: none;
+    }
+
+    .offer__content {
+        padding: 2% 3% 0;
+    }
+
+    .offer_flex {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .offer__parameters {
+        width: 100%;
+        height: 260px;
+    }
+
+    .offer_1_1 {
+        margin-bottom: 32px;
+    }
+
+    .offer_1_2 {
+        margin-bottom: 32px;
+    }
+
+    .offer_2 {
+        margin-bottom: 64px;
+    }
+
+    .item-flex {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .statements_flex {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .statements_text {
+        @include footer__par(16px, 300, 13.972px, 17px, center);
+        padding-bottom: 0px;
+        color: $color_almost_white1;
+    }
+
+    .statements_logo {
+        display: block;
+        padding-top: 48px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .statements_text__margin {
+        margin-bottom: 81px;
+    }
+
+    .subscribe_form_heading {
+        @include footer__par(150px, 700, 24px, 37px, center);
+    }
+
+    .subscribe_form_text {
+        @include footer__par(0, 400, 14px, 21px, center);
+    }
+
+    .quote_text {
+        padding-bottom: 0;
+    }
+
+    .copyright_and_social_media__flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .copyright {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social_media_block {
+        width: 50%;
+        padding-top: 43px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

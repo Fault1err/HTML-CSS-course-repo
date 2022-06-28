@@ -78,8 +78,6 @@
 
 .product_photo_block {
     background: $color_bg_almost_white;
-    position: relative;
-    z-index: 1;
 }
 
 .product_photo_flex {
@@ -114,19 +112,16 @@
 
 
 .product_descr_block {
-    position: relative;
-    z-index: 1;
+    transform: translateY(-64px);
 }
 
 .product_descr_flex {
     width: $site-width;
-    margin-top: -64px;
     margin-bottom: 129px;
     display: flex;
     flex-direction: column;
     border: $bd-width solid $color_very_soft_grey;
     background-color: $color_white;
-    margin-bottom: 129px;
 }
 
 .product_descr_header {
@@ -224,6 +219,7 @@
     text-align: center;
     border: $bd-width solid $color_bright_pink;
     background-color: $color_white;
+    transition: all 0.3s;
 }
 
 .fa-cart-shopping {

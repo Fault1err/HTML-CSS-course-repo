@@ -88,6 +88,7 @@
     color: $color_black;
     border: 1px solid $color_border_button_grey;
     background-color: $color_white;
+    transition: all 0.3s;
 }
 
 .reset_cart_button:hover {
@@ -97,12 +98,14 @@
 }
 
 .continue_shopping_button {
-    @include cart_par(300, 14px, 17px, 17px, 41px, 17px, 39px) text-transform: uppercase;
+    @include cart_par(300, 14px, 17px, 17px, 41px, 17px, 39px);
+    text-transform: uppercase;
     color: $color_black;
     border: 1px solid $color_border_button_grey;
     background-color: $color_white;
     margin-left: 192px;
     margin-bottom: 128px;
+    transition: all 0.3s;
 }
 
 .continue_shopping_button:hover {
@@ -134,6 +137,7 @@
     border: 1px solid $color_border_button_grey;
     background-color: $color_white;
     margin-bottom: 57px;
+    transition: all 0.3s;
 }
 
 .get_a_quote_button:hover {
@@ -197,6 +201,7 @@
     text-transform: uppercase;
     margin: auto;
     margin-bottom: 42px;
+    transition: all 0.3s;
 }
 
 .checkout_button:hover {

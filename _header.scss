@@ -2,6 +2,10 @@
     background: $color_black_lighter;
 }
 
+.header_content {
+    padding: 3% 2% 0 0;
+}
+
 .header_flex {
     display: flex;
     justify-content: space-between;
@@ -23,13 +27,14 @@
 }
 
 .header_right {
-    width: 168px;
+    width: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .icon_hover:hover {
+    transition: all 0.3s;
     transform: scale(1.1);
 }
 
@@ -61,6 +66,7 @@
     top: 45px;
     display: none;
     z-index: 2;
+    transition: all 0.3s;
 }
 
 .mega-box::before {
@@ -93,9 +99,9 @@
 }
 
 .menu__par {
-   font-weight: 400;
-   font-size: 14px; 
-   line-height: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .menu_heading {
